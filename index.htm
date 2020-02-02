@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>This is info page</title>
+</head>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="js/custom.js">
+<body>
+    <div>
+        <h1><a href="index.htm">Home</a></h1>
+        <p>
+            This is about home. Here I want to say about myself,my information,my address ...
+        </p>
+    </div>
+    
+    <div>
+        <h1><a href="about.html">About</a></h1>
+        <p>
+            I completed my graduation from AUST. Now I am doing my M.Eng at Rajshahi University and I am currently working at Bangladesh Polytecnic Institute. I am also trying to publish my undergrade thesis work. I have interest in programming, data analysis.
+        </p>
+    </div>
+    
+    <div>
+        <h1><a href="work_experience.html">Work Experience</a></h1>
+        <p>
+            1.I am currently working at Bangladesh Polytechnic Institute in Computer Technology. Here I am working as an instructor.<br>
+            2.Previously I worked at Eunoia I.T Solutions. 
+        </p>
+    </div>
+    
+    <div>
+        <h1><a href="interest.html">Interest</a></h1>
+        <p>
+            I have interest in travelling, knowing more and more about islam, watching thriller movies, gathering more and more knowledge.
+        </p>
+    </div>
+    
+    <div>
+        <h1><a href="photo.html">Photo</a></h1>
+        <p>
+            Please browse the photo here..
+        </p>
+ 
+      <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+<p><label for="file" style="cursor: pointer;">Click Here To Upload Image</label></p>
+<p><img id="output" width="200px"/></p>
+
+<script>
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};  
+        </script>
+       
+    </div>
+    
+    
+    <div>
+        <h1><a href="contact.html">Contact</a></h1>
+        <p>
+            Address: Flat-C3, Snehaneer-2, Bhatapara, Rajshahi-6000 <br>
+            Mobile: 01686559668<br>
+            Email: shaon20aust@gmail.com
+        </p>
+    </div>
+    
+</body>
+</html>
